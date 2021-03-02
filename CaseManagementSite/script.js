@@ -1,3 +1,8 @@
+//document.getElementById("createCustomerForm").addEventListener("submit", newCustomer(e))
+//document.getElementById("createCaseWorkerForm").addEventListener("submit", newCaseWorker(e))
+//document.getElementById("createCaseStatusForm").addEventListener("submit", newCaseStatus(e))
+//document.getElementById("createCaseForm").addEventListener("submit", newCase(e))
+
 function newCustomer(e) {
     e.preventDefault()
 
@@ -146,7 +151,4 @@ getStatus();
 getCustomers();
 getCaseWorkers();
 
-document.getElementById("createCustomerForm").addEventListener("submit", newCustomer(e));
-document.getElementById("createCaseWorkerForm").addEventListener("submit", newCaseWorker(e));
-document.getElementById("createCaseStatusForm").addEventListener("submit", newCaseStatus(e));
-document.getElementById("createCaseForm").addEventListener("submit", newCase(e));
+

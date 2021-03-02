@@ -3,26 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <title>Document</title>
 </head>
 <body>
     <h4>Create New Casework</h4>
-    <form id="createCaseWorkForm">
+    <!-- <form id="createCaseWorkForm"> -->
         <div>
-            <input id="firstname" type="text" placeholder="First Name">
-            <input id="lastname" type="text" placeholder="Last Name">
+            <input id="workerfirstname" type="text" placeholder="First Name">
+            <input id="workerlastname" type="text" placeholder="Last Name">
         </div>
         <div>
-            <input id="email" type="text" placeholder="Email Address">
+            <input id="workeremail" type="text" placeholder="Email Address">
         </div>
         <div>
-            <input id="phone" type="text" placeholder="Phone">
+            <input id="workerphone" type="text" placeholder="Phone">
         </div>
         <div>
-            <button type="submit">CREATE CASEWORKER</button>
+            <button type="submit" id='CreateCaseWorker'>CREATE CASEWORKER</button>
         </div>
-    </form>
+    <!-- </form> -->
 
-    <script src="script.js"></script>
+    <script src="CreateCaseWorker.js"></script>
 </body>
 </html>

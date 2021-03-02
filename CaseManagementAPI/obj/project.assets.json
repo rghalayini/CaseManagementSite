@@ -8918,11 +8918,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\remyg\\Programming\\API\\CaseManagementAPI\\CaseManagementAPI.csproj",
+      "projectUniqueName": "C:\\Users\\remyg\\Programming\\API\\CaseManagement\\CaseManagementAPI\\CaseManagementAPI.csproj",
       "projectName": "CaseManagementAPI",
-      "projectPath": "C:\\Users\\remyg\\Programming\\API\\CaseManagementAPI\\CaseManagementAPI.csproj",
+      "projectPath": "C:\\Users\\remyg\\Programming\\API\\CaseManagement\\CaseManagementAPI\\CaseManagementAPI.csproj",
       "packagesPath": "C:\\Users\\remyg\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\remyg\\Programming\\API\\CaseManagementAPI\\obj\\",
+      "outputPath": "C:\\Users\\remyg\\Programming\\API\\CaseManagement\\CaseManagementAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\remyg\\AppData\\Roaming\\NuGet\\NuGet.Config",

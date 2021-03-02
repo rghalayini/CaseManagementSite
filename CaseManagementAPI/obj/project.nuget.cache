@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "P4JJl/jvX4Hecc7yIuzp2W9u70IGb194yyOPTlVTgebykha8H5Dc2M6CVZgtiiAvnianyYDQ8795WkUOwJVsuw==",
+  "dgSpecHash": "e37x4pjXo10ArI7G9KXLgfmz8/ukOTOFyPQ46oX6abD78dMGWxu5dUw/oaMbZBOMDmz6a0oqEV9ZOoKU29U3HQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\remyg\\Programming\\API\\CaseManagementAPI\\CaseManagementAPI.csproj",
+  "projectFilePath": "C:\\Users\\remyg\\Programming\\API\\CaseManagement\\CaseManagementAPI\\CaseManagementAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\remyg\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\remyg\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\3.1.2\\microsoft.aspnetcore.jsonpatch.3.1.2.nupkg.sha512",

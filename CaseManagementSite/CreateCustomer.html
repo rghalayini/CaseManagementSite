@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <title>Document</title>
 </head>
 <body>
     <h4>Create New Customer</h4>
-    <form id="createCustomerForm">
+    <!-- <form id="createCustomerForm"> -->
         <div>
             <input id="firstname" type="text" placeholder="First Name">
             <input id="lastname" type="text" placeholder="Last Name">
@@ -24,10 +26,10 @@
             <input id="phone" type="text" placeholder="Phone">
         </div>
         <div>
-            <button type="submit">CREATE CUSTOMER</button>
+            <button  type="submit" id='CreateNewCustomer'>CREATE CUSTOMER</button>
         </div>
-    </form>
+    <!-- </form> -->
+    <script src="CreateCustomer.js"></script>
 
-    <script src="script.js"></script>
 </body>
 </html>
