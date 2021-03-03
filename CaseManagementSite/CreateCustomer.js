@@ -7,11 +7,15 @@ $(document).ready(function() {
             lastName : $('#lastname').val(),
             addressLine : $('#addressline').val(),
             postalCode : $('#postalcode').val(),
-            city : city = $('#city').val(),
-            email : email = $('#email').val(),
-            phone : phone = $('#phone').val()
+            city : $('#city').val(),
+            email : $('#email').val(),
+            phone : $('#phone').val(),
+            cases:"",
+            comment:""
         }
-        fetch('http://localhost:51940/api/Customers', {
+        console.log(customer);
+
+        fetch('http://localhost:56357/api/customers', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
@@ -27,6 +31,23 @@ $(document).ready(function() {
             console.log("error");
             console.log(error);
         });
-        console.log(customer);
     })
- });
+  });
+
+
+// fetch('http://localhost:51940/api/customers', {
+//     method: "POST",
+//     body: JSON.stringify({
+
+//         firstName: "Hoho",
+//         lastName: "Gogo",
+//         addressline: "test street",
+//         postalCode: "23423",
+//         city: "stockholm",
+//         cases:"",
+//         comment:""
+//     }),
+//     headers: {"Content-type":"application/json; charset=UTF-8"
+//  }
+// })
+// .then(response => response.json()).then(json => console.log(json));

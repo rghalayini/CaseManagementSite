@@ -11,7 +11,7 @@ $(document).ready(function() {
             modified : new Date()
         }
 
-    fetch('http://localhost:51940/api/cases', {
+    fetch('http://localhost:56357/api/cases', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
@@ -30,7 +30,7 @@ $(document).ready(function() {
     })
 
     function getStatus(){
-        fetch('http://localhost:51940/api/casestatus')
+        fetch('http://localhost:56357/api/casestatus')
             .then(res => res.json())
             .then(data => {
                 let options = data.map(option => `<option value="${option.id}">${option.status}</option>`)
@@ -38,7 +38,7 @@ $(document).ready(function() {
             })
     }
     function getCustomers(){
-        fetch('http://localhost:51940/api/customers')
+        fetch('http://localhost:56357/api/customers')
             .then(res => res.json())
             .then(data => {
                 let options = data.map(option => `<option value="${option.id}">${option.firstName} ${option.lastName}</option>`)
@@ -46,7 +46,7 @@ $(document).ready(function() {
             })
     }
     function getCaseWorkers(){
-        fetch('http://localhost:51940/api/caseworkers')
+        fetch('http://localhost:56357/api/caseworkers')
             .then(res => res.json())
             .then(data => {
                 let options = data.map(option => `<option value="${option.id}">${option.firstName} ${option.lastName}</option>`)

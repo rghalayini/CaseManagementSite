@@ -7,16 +7,19 @@ using System.Collections.Generic;
 
 namespace CaseManagementAPI.Models
 {
-    public partial class CaseStatus
+    public partial class CaseWorkers
     {
-        public CaseStatus()
+        public CaseWorkers()
         {
             Cases = new HashSet<Cases>();
             Comments = new HashSet<Comments>();
         }
 
         public int Id { get; set; }
-        public string Status { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string Email { get; set; }
+        public string Phone { get; set; }
 
         public virtual ICollection<Cases> Cases { get; set; }
         public virtual ICollection<Comments> Comments { get; set; }

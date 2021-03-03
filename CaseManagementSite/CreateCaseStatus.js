@@ -5,7 +5,7 @@ $(document).ready(function() {
         var casestatus = {
             status : $('#status').val()
         }
-        fetch('http://localhost:51940/api/casestatus', {
+        fetch('http://localhost:56357/api/casestatus', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',

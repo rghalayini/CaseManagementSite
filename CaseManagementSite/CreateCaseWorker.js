@@ -8,7 +8,7 @@ $(document).ready(function() {
             email  : $('#workeremail').val(),
             phone : $('#workerphone').val()
         }
-        fetch('http://localhost:51940/api/CaseWorkers', {
+        fetch('http://localhost:56357/api/CaseWorkers', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',

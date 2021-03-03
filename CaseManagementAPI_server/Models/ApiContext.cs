@@ -2,11 +2,9 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 
-// Code scaffolded by EF Core assumes nullable reference types (NRTs) are not used or disabled.
-// If you have enabled NRTs for your project, then un-comment the following line:
-// #nullable disable
+#nullable disable
 
-namespace CaseManagementAPI.Models
+namespace CaseManagementAPI_server.Models
 {
     public partial class ApiContext : DbContext
     {
@@ -19,36 +17,21 @@ namespace CaseManagementAPI.Models
         {
         }
 
-        public virtual DbSet<CaseStatus> CaseStatus { get; set; }
-        public virtual DbSet<CaseWorkers> CaseWorkers { get; set; }
-        public virtual DbSet<Cases> Cases { get; set; }
-        public virtual DbSet<Comments> Comments { get; set; }
-        public virtual DbSet<Customers> Customers { get; set; }
+        public virtual DbSet<Case> Cases { get; set; }
+        public virtual DbSet<CaseStatus> CaseStatuses { get; set; }
+        public virtual DbSet<CaseWorker> CaseWorkers { get; set; }
+        public virtual DbSet<Comment> Comments { get; set; }
+        public virtual DbSet<Customer> Customers { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<CaseStatus>(entity =>
-            {
-                entity.Property(e => e.Status).HasMaxLength(50);
-            });
+            modelBuilder.HasAnnotation("Relational:Collation", "SQL_Latin1_General_CP1_CI_AS");
 
-            modelBuilder.Entity<CaseWorkers>(entity =>
-            {
-                entity.Property(e => e.Email).HasMaxLength(50);
-
-                entity.Property(e => e.FirstName).HasMaxLength(50);
-
-                entity.Property(e => e.LastName).HasMaxLength(50);
-
-                entity.Property(e => e.Phone).HasMaxLength(50);
-            });
-
-            modelBuilder.Entity<Cases>(entity =>
+            modelBuilder.Entity<Case>(entity =>
             {
                 entity.Property(e => e.Created).HasColumnType("datetime");
 
@@ -72,7 +55,25 @@ namespace CaseManagementAPI.Models
                     .HasConstraintName("FK__Cases__CustomerI__3F466844");
             });
 
-            modelBuilder.Entity<Comments>(entity =>
+            modelBuilder.Entity<CaseStatus>(entity =>
+            {
+                entity.ToTable("CaseStatus");
+
+                entity.Property(e => e.Status).HasMaxLength(50);
+            });
+
+            modelBuilder.Entity<CaseWorker>(entity =>
+            {
+                entity.Property(e => e.Email).HasMaxLength(50);
+
+                entity.Property(e => e.FirstName).HasMaxLength(50);
+
+                entity.Property(e => e.LastName).HasMaxLength(50);
+
+                entity.Property(e => e.Phone).HasMaxLength(50);
+            });
+
+            modelBuilder.Entity<Comment>(entity =>
             {
                 entity.Property(e => e.Created).HasColumnType("datetime");
 
@@ -92,7 +93,7 @@ namespace CaseManagementAPI.Models
                     .HasConstraintName("FK__Comments__Custom__4222D4EF");
             });
 
-            modelBuilder.Entity<Customers>(entity =>
+            modelBuilder.Entity<Customer>(entity =>
             {
                 entity.Property(e => e.AddressLine).HasMaxLength(50);
 

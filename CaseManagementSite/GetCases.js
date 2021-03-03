@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-    fetch('http://localhost:51940/api/Cases')
+    fetch('http://localhost:56357/api/Cases')
         .then(res => res.json())
         .then(data => {
             let cases = data.map(_case =>
